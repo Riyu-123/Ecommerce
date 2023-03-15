@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height: 150vh; */
+        }
+
+        .container {
+            max-width: 550px;
+            margin-top: 35px;
+            /* max-height: 700px; */
+            padding: 20px;
+            /* margin: 14 50px; */
+            /* background-color: rgb(247, 246, 244); */
+            box-shadow: 0 15px 20px #8eaac0;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+            text-align: center;
+            color: rgb(41, 15, 143);
+            text-shadow: 1px 1px 2px black, 0 0 25px #ece97d, 0 0 5px rgb(43, 230, 71);
+            padding-bottom: 8px;
+            /* border-bottom: 0px solid silver; */
+            margin-top: 20px;
+            animation-name: example;
+            animation-duration: 6s;
+            animation-delay: 2s;
+            animation-iteration-count: 5;
+        }
+
+        /* @keyframes example { */
+
+            /* 0% { */
+                /* color: white; */
+            /* } */
+
+            /* 25% { */
+                /* color: rgb(88, 209, 94); */
+            /* } */
+
+            /* 50% { */
+                /* color: rgb(39, 165, 119); */
+            /* } */
+        /* } */
+
+        #hello {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-style: italic;
+        }
+
+        .content {
+            /* border: 1px solid greenyellow; */
+            display: flex;
+            font-size: 18px;
+            color: rgb(4, 105, 4);
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px 0;
+            margin-top: 55px;
+            /* background-color: whitesmoke; */
+            /* box-shadow: 0 4px 6px #c2ebcc; */
+            animation-name: exam;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: 5;
+        }
+
+        @keyframes exam {
+
+            0% {
+                color: rgb(40, 153, 28);
+            }
+
+            25% {
+                color: rgb(9, 74, 239);
+            }
+
+            /* 0% { */
+            /* box-shadow: 0 4px 6px rgb(130, 130, 217); */
+            /* } */
+
+            /* 50% { */
+            /* box-shadow: 0 4px 6px rgb(206, 155, 196); */
+            /* } */
+
+            /* 100% { */
+            /* box-shadow: 0 4px 6px rgb(149, 149, 204); */
+            /* } */
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .button-container button {
+            width: 30%;
+            text-align: center;
+            /* margin-left: 25px; */
+            margin-top: 50px;
+            padding: 10px;
+            /* display: block; */
+            font-size: 15px;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            transition: width 2s;
+            background-image: linear-gradient(to right, #906ac5, #563196);
+        }
+
+        .button-container button:hover {
+            width: 50%;
+            background-image: linear-gradient(to right, #563196, #906ac5);
+        }
+
+        @media(max-width:600px) {
+            .container {
+                min-width: 280px;
+            }
+
+            .content {
+                max-height: 380px;
+                overflow: auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h2><i class="fa fa-check-circle-o" id="hello" style="font-size:56px"></i><br>REGISTRATION SUCCESS</h2>
+        </div>
+        <div class="content">
+            <p> <i class="fa fa-check-circle" style="font-size:24px"></i> Thank you. We have sent you email to
+                "criya539@gmail.com".
+                Please click the link in that message to activate your account.</p>
+        </div>
+        <div>
+            <div class="button-container">
+                <button type="submit">CONTINUE</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
